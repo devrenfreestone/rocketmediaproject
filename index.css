@@ -1,0 +1,123 @@
+body{
+	background: #3c3
+	max-width: 900px;
+}
+
+#card{
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: minmax(150px,1fr) 2fr;
+	grid-template-rows: 10px 30px repeat(2, minmax(75px, 1fr));
+	grid-gap: 5px;
+	box-shadow: -5px 5px 6px 0 #ddd;
+	padding: 5%;
+	max-height: 300px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bbb;
+	border-radius: 5px;
+
+}
+
+
+.card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+#card-image{
+	border-radius: 50%;
+	width: 125px;
+}
+
+#line{
+	border-bottom-style: solid;
+	border-color: #bbb;
+	border-width: thin;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	text-align: left;
+	max-width: 200px;
+	margin-left: 10px;
+}
+
+#details{
+	grid-column: 2 / -1;
+	display: grid;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#card-title{
+	margin-left: 10px;
+	text-align: left;
+	grid-column: 2 / -1;
+	grid-row: 1 / 2;	
+}
+
+#info{
+	margin-left: 10px;
+	text-align: left;
+	grid-column: 2 / -1;
+	grid-row: 2 / 3;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;	
+}
+
+#button{
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	border-style: solid;
+	border-color: #777;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	grid-column: 1 / 2;
+	margin-left: 10px;
+
+}
+
+#button:hover{
+	background-color: #200080;
+	color: #fff;
+}
+
+
+@media screen and (min-width: 601px) {
+.card{
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: 200px repeat(3,minmax(100px,1fr));
+	grid-template-rows: 25px 25px repeat(3,75px);
+	grid-gap: 15px;
+	box-shadow: 5px 0 5px -5px #333;
+	padding: 5%;
+	max-height: 300px;
+}
+
+#card-image{
+	width: 170px;
+	padding: 5px;
+}
+
+#line{
+	grid-row: 1 / 2;
+	grid-template-columns: 2;
+	color: #bbb;
+}
+
+#details{
+	grid-row: 2 / -1;
+	display: grid;
+	grid-template-columns: auto-fill(repeat(3,minmax(200px,1fr)));
+	grid-template-rows: repeat(3,1fr);
+	font-family: Open-Sans;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#button{
+	width: 250px;
+}
+/*<meta name=“viewport” content=“width=device-width", initialscale=“1”>*/
