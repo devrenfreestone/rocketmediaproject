@@ -7,7 +7,7 @@ body{
 	max-width: 800px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: minmax(150px,1fr) 2fr;
+	-ms-grid-columns: 1fr 2fr;
 	-ms-grid-rows: 10px 30px repeat(2, minmax(75px, 1fr));
 	grid-gap: 5px;
 	box-shadow: -5px 5px 6px 0 #ddd;
@@ -28,6 +28,8 @@ body{
 #card-image{
 	border-radius: 50%;
 	width: 125px;
+	-ms-grid-column: 1;
+	
 }
 
 #line{
@@ -42,7 +44,9 @@ body{
 }
 
 #details{
-	grid-column: 2 / -1;
+	/*grid-column: 2 / -1;*/
+	ms-grid-columns: 2;
+	/*ms-grid-column-span: 3;*/
 	display: grid;	
 	font-family: 'Open Sans', sans-serif;
 }
