@@ -5,9 +5,10 @@ body{
 
 #card{
 	max-width: 800px;
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: minmax(150px,1fr) 2fr;
-	grid-template-rows: 10px 30px repeat(2, minmax(75px, 1fr));
+	-ms-grid-columns: minmax(150px,1fr) 2fr;
+	-ms-grid-rows: 10px 30px repeat(2, minmax(75px, 1fr));
 	grid-gap: 5px;
 	box-shadow: -5px 5px 6px 0 #ddd;
 	padding: 5%;
