@@ -3,11 +3,12 @@ body{
 	max-width: 900px;
 }
 
+/*Sets up the primary grid and includes the border shadows*/
 #card{
 	max-width: 800px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: minmax(150px,1fr) 2fr;
+	-ms-grid-columns: minmax(180px,1fr) 2fr;
 	-ms-grid-rows: 10px 30px 75px 75px;
 	grid-template-columns: minmax(150px,1fr) 2fr;
 	grid-template-rows: 10px 30px repeat(2, minmax(75px, 1fr));
@@ -22,11 +23,12 @@ body{
 
 }
 
-
-.card:hover{
+/*Changes the shadow intensity when hovering*/
+#card:hover{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
+/*Controls the image on the card*/
 #card-image{
 	border-radius: 50%;
 	width: 125px;
@@ -38,6 +40,7 @@ body{
 	grid-column: 1 / -1;
 }
 
+/*Controls the line above the card title*/
 #line{
 	border-bottom-style: solid;
 	border-color: #bbb;
@@ -52,6 +55,7 @@ body{
 	margin-left: 10px;
 }
 
+/*Controls the container for the Card Title, Info Paragraph, and Button. Sets up a secondary grid for those elements.*/
 #details{
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 3;
@@ -61,7 +65,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-
+/*Controls the Card Title*/
 #card-title{
 	margin-left: 10px;
 	text-align: left;
@@ -72,6 +76,7 @@ body{
 	grid-row: 1 / 2;	
 }
 
+/*Controls the info paragraph with the Lorem Ipsum (lucas ipsum) text*/
 #info{
 	margin-left: 10px;
 	text-align: left;
@@ -84,6 +89,7 @@ body{
 	font-size: 12px;	
 }
 
+/*Controls the button*/
 #button{
 	text-align: center;
 	height: 50px;
@@ -101,12 +107,13 @@ body{
 
 }
 
+/*Changes the background color and text color during button hover*/
 #button:hover{
 	background-color: #200080;
 	color: #fff;
 }
 
-
+/*All the follow adjust the corresponding values above to account for a wider viewport*/
 @media screen and (min-width: 601px) {
 .card{
 	max-width: 800px;
