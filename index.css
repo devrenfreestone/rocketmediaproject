@@ -29,6 +29,8 @@ body{
 	border-radius: 50%;
 	width: 125px;
 	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 1;
 	
 }
 
@@ -45,8 +47,8 @@ body{
 
 #details{
 	/*grid-column: 2 / -1;*/
-	ms-grid-columns: 2;
-	/*ms-grid-column-span: 3;*/
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	display: grid;	
 	font-family: 'Open Sans', sans-serif;
 }
