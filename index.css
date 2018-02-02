@@ -5,7 +5,10 @@ body{
 
 #card{
 	max-width: 800px;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: minmax(150px,1fr) 2fr;
+	-ms-grid-rows: 10px 30px repeat(2, minmax(75px, 1fr));
 	grid-template-columns: minmax(150px,1fr) 2fr;
 	grid-template-rows: 10px 30px repeat(2, minmax(75px, 1fr));
 	grid-gap: 5px;
@@ -33,6 +36,9 @@ body{
 	border-bottom-style: solid;
 	border-color: #bbb;
 	border-width: thin;
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	text-align: left;
@@ -41,7 +47,10 @@ body{
 }
 
 #details{
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	grid-column: 2 / -1;
+	display: -ms-grid;
 	display: grid;	
 	font-family: 'Open Sans', sans-serif;
 }
@@ -50,6 +59,9 @@ body{
 #card-title{
 	margin-left: 10px;
 	text-align: left;
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	grid-column: 2 / -1;
 	grid-row: 1 / 2;	
 }
@@ -57,6 +69,9 @@ body{
 #info{
 	margin-left: 10px;
 	text-align: left;
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	grid-column: 2 / -1;
 	grid-row: 2 / 3;
 	font-family: 'Open Sans', sans-serif;
@@ -72,6 +87,8 @@ body{
 	border-color: #777;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 2;
 	grid-column: 1 / 2;
 	margin-left: 10px;
 
@@ -86,7 +103,10 @@ body{
 @media screen and (min-width: 601px) {
 .card{
 	max-width: 800px;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 200px repeat(3,minmax(100px,1fr));
+	-ms-grid-rows: 25px 25px repeat(3,75px);
 	grid-template-columns: 200px repeat(3,minmax(100px,1fr));
 	grid-template-rows: 25px 25px repeat(3,75px);
 	grid-gap: 15px;
@@ -101,13 +121,19 @@ body{
 }
 
 #line{
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	grid-row: 1 / 2;
 	grid-template-columns: 2;
 	color: #bbb;
 }
 
 #details{
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
 	grid-row: 2 / -1;
+	display: -ms-grid;
 	display: grid;
 	grid-template-columns: auto-fill(repeat(3,minmax(200px,1fr)));
 	grid-template-rows: repeat(3,1fr);
