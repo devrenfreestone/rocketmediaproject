@@ -8,7 +8,7 @@ body{
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: minmax(150px,1fr) 2fr;
-	-ms-grid-rows: 10px 30px repeat(2, minmax(75px, 1fr));
+	-ms-grid-rows: 10px 30px 75px 75px;
 	grid-template-columns: minmax(150px,1fr) 2fr;
 	grid-template-rows: 10px 30px repeat(2, minmax(75px, 1fr));
 	grid-gap: 5px;
@@ -30,6 +30,7 @@ body{
 #card-image{
 	border-radius: 50%;
 	width: 125px;
+	height: 125px;
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 1;
 	-ms-grid-row: 1;
@@ -111,8 +112,8 @@ body{
 	max-width: 800px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 200px repeat(3,minmax(100px,1fr));
-	-ms-grid-rows: 25px 25px repeat(3,75px);
+	-ms-grid-columns: 200px 200px 200px 200px;
+	-ms-grid-rows: 25px 25px 75px 75px 75px;
 	grid-template-columns: 200px repeat(3,minmax(100px,1fr));
 	grid-template-rows: 25px 25px repeat(3,75px);
 	grid-gap: 15px;
@@ -123,6 +124,7 @@ body{
 
 #card-image{
 	width: 170px;
+	height: 170px;
 	padding: 5px;
 }
 
@@ -138,6 +140,7 @@ body{
 #details{
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 3;
+	-ms-grid-row: 2;
 	grid-row: 2 / -1;
 	display: -ms-grid;
 	display: grid;
