@@ -92,9 +92,9 @@ body{
 	border-color: #777;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
-	-ms-grid-column: 1;
+	-ms-grid-column: 2;
 	-ms-grid-column-span: 2;
-	-ms-grid-row: 2;
+	-ms-grid-row: 3;
 	grid-column: 1 / 2;
 	margin-left: 10px;
 
@@ -151,5 +151,8 @@ body{
 
 #button{
 	width: 250px;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
+	-ms-grid-row: 3;
 }
 /*<meta name=“viewport” content=“width=device-width", initialscale=“1”>*/
